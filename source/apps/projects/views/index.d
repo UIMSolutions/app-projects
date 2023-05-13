@@ -1,6 +1,6 @@
 module apps.ecm.views.index;
 
-import apps.ecm;
+import apps.projects;
 @safe:
 
 class DECMIndexView : DView {

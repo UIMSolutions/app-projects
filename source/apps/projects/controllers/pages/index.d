@@ -1,6 +1,6 @@
 module apps.ecm.controllers.pages.index;
 
-import apps.ecm;
+import apps.projects;
 @safe:
 
 class DECMIndexPageController : DPageController {

@@ -1,6 +1,6 @@
 module apps.ecm.controllers.pages.error;
 
-import apps.ecm;
+import apps.projects;
 @safe:
 
 class DECMErrorPageController : DPageController {

@@ -1,7 +1,7 @@
 module apps.ecm.views.components.pages;
 
 @safe:
-import apps.ecm;
+import apps.projects;
 
 public import apps.ecm.views.components.pages.bodies;
 public import apps.ecm.views.components.pages.footers;

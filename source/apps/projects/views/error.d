@@ -1,6 +1,6 @@
 module apps.ecm.views.error;
 
-import apps.ecm;
+import apps.projects;
 @safe:
 
 class DECMErrorView : DView {
