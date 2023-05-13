@@ -1,27 +1,33 @@
 module apps.projects;
 
-@safe:
-mixin ImportPhobos;
-mixin ImportDubs;
-mixin ImportUim;
+mixin(ImportPhobos!());
 
-public import colored;
+// Dub
+public import vibe.d;
 
-// Additional imports
-public import uim.jsonbase;
-public import uim.entities;
-public import uim.entitybase;
+// UIM
+public import uim.core;
+public import uim.bootstrap;
+public import uim.html;
+public import uim.oop;
+public import uim.models;
+public import uim.apps;
+public import uim.controls;
+public import uim.servers;
 
-public import uim.projects;
+public import langs.javascript;
 
-// server-modeller packages
-public import servers.modeller;
+public {
+  import apps.projects.controllers;
+  import apps.projects.helpers;
+  import apps.projects.tests;
+  import apps.projects.views;
+}
 
-public import models.systems;
-public import models.projects;
-
-public import layouts.tabler;
-
-public import apps.projects.controllers;
-public import apps.projects.routers;
-public import apps.projects.views;
+DApplication projectsApp;
+static this() {
+  projectsApp = Application
+    .name("projectsApp")
+    .rootPath("/apps/projects")
+    .addRoute(Route("/", HTTPMethod.GET, projectsIndexPageController));
+}
