@@ -3,15 +3,15 @@ module apps.projects.views.index;
 import apps.projects;
 @safe:
 
-class DECMIndexView : DView {
-  mixin(ViewThis!("ECMIndexView"));
+class DProjectsIndexView : DView {
+  mixin(ViewThis!("ProjectsIndexView"));
 
   override void beforeH5(STRINGAA options = null) {
     super.beforeH5(options);
 
     /* this
       .pageHeader
-        .title("ECM -> Index"); */
+        .title("projects -> Index"); */
   }
 }
-mixin(ViewCalls!("ECMIndexView", "DECMIndexView"));
+mixin(ViewCalls!("ProjectsIndexView", "Dv"));

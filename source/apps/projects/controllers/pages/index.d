@@ -3,14 +3,14 @@ module apps.projects.controllers.pages.index;
 import apps.projects;
 @safe:
 
-class DECMIndexPageController : DPageController {
-  mixin(ControllerThis!("ECMIndexPageController"));
+class DProjectsIndexPageController : DPageController {
+  mixin(ControllerThis!("ProjectsIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(ECMIndexView(this));
+      .view(projectsIndexView(this));
   }
 }
-mixin(ControllerCalls!("ECMIndexPageController", "DECMIndexPageController"));
+mixin(ControllerCalls!("ProjectsIndexPageController", "DProjectsIndexPageController"));
