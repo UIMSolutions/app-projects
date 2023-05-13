@@ -1,4 +1,4 @@
-module apps.ecm.helpers;
+module apps.projects.helpers;
 
 @safe:
 import apps.projects;

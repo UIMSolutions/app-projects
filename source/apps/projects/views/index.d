@@ -1,4 +1,4 @@
-module apps.ecm.views.index;
+module apps.projects.views.index;
 
 import apps.projects;
 @safe:

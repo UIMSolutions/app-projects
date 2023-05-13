@@ -1,4 +1,4 @@
-module apps.ecm.controllers.components;
+module apps.projects.controllers.components;
 
 @safe:
 import apps.projects;

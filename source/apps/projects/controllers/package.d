@@ -1,8 +1,8 @@
-module apps.ecm.controllers;
+module apps.projects.controllers;
 
 public {
-  import apps.ecm.controllers.actions;
-  import apps.ecm.controllers.apis;
-  import apps.ecm.controllers.components;
-  import apps.ecm.controllers.pages;
+  import apps.projects.controllers.actions;
+  import apps.projects.controllers.apis;
+  import apps.projects.controllers.components;
+  import apps.projects.controllers.pages;
 }

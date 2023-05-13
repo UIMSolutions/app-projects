@@ -1,7 +1,7 @@
-module apps.ecm.views;
+module apps.projects.views;
 
-public import apps.ecm.views.components;
-public import apps.ecm.views.entities;
+public import apps.projects.views.components;
+public import apps.projects.views.entities;
 
-public import apps.ecm.views.error;
-public import apps.ecm.views.index;
+public import apps.projects.views.error;
+public import apps.projects.views.index;

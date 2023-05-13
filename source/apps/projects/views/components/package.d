@@ -1,7 +1,7 @@
-module apps.ecm.views.components;
+module apps.projects.views.components;
 
 @safe:
 import apps.projects;
 
-public import apps.ecm.views.components.forms;
-public import apps.ecm.views.components.pages;
+public import apps.projects.views.components.forms;
+public import apps.projects.views.components.pages;

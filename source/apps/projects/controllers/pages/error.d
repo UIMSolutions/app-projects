@@ -1,4 +1,4 @@
-module apps.ecm.controllers.pages.error;
+module apps.projects.controllers.pages.error;
 
 import apps.projects;
 @safe:

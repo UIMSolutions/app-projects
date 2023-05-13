@@ -1,1 +1,1 @@
-module apps.ecm.tests;
+module apps.projects.tests;

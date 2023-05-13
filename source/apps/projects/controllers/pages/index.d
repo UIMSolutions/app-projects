@@ -1,4 +1,4 @@
-module apps.ecm.controllers.pages.index;
+module apps.projects.controllers.pages.index;
 
 import apps.projects;
 @safe:

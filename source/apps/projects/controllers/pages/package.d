@@ -1,6 +1,6 @@
-module apps.ecm.controllers.pages;
+module apps.projects.controllers.pages;
 
 public {
-  import apps.ecm.controllers.pages.error;
-  import apps.ecm.controllers.pages.index;
+  import apps.projects.controllers.pages.error;
+  import apps.projects.controllers.pages.index;
 }

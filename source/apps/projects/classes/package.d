@@ -1,4 +1,4 @@
-module apps.ecm.classes;
+module apps.projects.classes;
 
 @safe:
 import apps.projects;
