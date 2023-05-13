@@ -1,7 +1,7 @@
 module apps.projects.views.components.pages;
 
-@safe:
 import apps.projects;
+@safe:
 
 public import apps.projects.views.components.pages.bodies;
 public import apps.projects.views.components.pages.footers;
