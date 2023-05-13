@@ -1,4 +1,4 @@
-module apps.ecm.views.components.pages.footers;
+module apps.projects.views.components.pages.footers;
 
 @safe:
 import apps.projects;

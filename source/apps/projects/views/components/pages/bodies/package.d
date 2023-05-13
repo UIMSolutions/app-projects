@@ -1,4 +1,4 @@
-module apps.ecm.views.components.pages.bodies;
+module apps.projects.views.components.pages.bodies;
 
 @safe:
 import apps.projects;

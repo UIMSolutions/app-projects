@@ -1,8 +1,8 @@
-module apps.ecm.views.components.pages;
+module apps.projects.views.components.pages;
 
 @safe:
 import apps.projects;
 
-public import apps.ecm.views.components.pages.bodies;
-public import apps.ecm.views.components.pages.footers;
-public import apps.ecm.views.components.pages.headers;
+public import apps.projects.views.components.pages.bodies;
+public import apps.projects.views.components.pages.footers;
+public import apps.projects.views.components.pages.headers;

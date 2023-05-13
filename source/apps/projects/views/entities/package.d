@@ -1,4 +1,4 @@
-module apps.ecm.views.entities;
+module apps.projects.views.entities;
 
 @safe:
 import apps.projects;
