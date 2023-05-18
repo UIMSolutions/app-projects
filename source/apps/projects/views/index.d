@@ -3,15 +3,16 @@ module apps.projects.views.index;
 import apps.projects;
 @safe:
 
-class DProjectsIndexView : DView {
-  mixin(ViewThis!("ProjectsIndexView"));
+class DPRJIndexView : DView {
+  mixin(ViewThis!("PRJIndexView"));
 
-  override void beforeH5(STRINGAA options = null) {
-    super.beforeH5(options);
+  override DH5Obj[] toH5(STRINGAA options = null) {
+    debugMethodCall(moduleName!DPRJIndexView~":DPRJIndexView("~this.className~")::toH5");
+    super.toH5(options);
 
-    /* this
-      .pageHeader
-        .title("projects -> Index"); */
+    return [
+      H5Div("App Projects -> Index")
+    ].toH5;
   }
 }
-mixin(ViewCalls!("ProjectsIndexView", "Dv"));
+mixin(ViewCalls!("PRJIndexView"));

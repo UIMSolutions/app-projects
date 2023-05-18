@@ -20,14 +20,16 @@ public import langs.javascript;
 public {
   import apps.projects.controllers;
   import apps.projects.helpers;
+  import apps.projects.routers;
   import apps.projects.tests;
   import apps.projects.views;
 }
 
-DApplication projectsApp;
+DApp projectsApp;
 static this() {
-  projectsApp = Application
+  projectsApp = App
     .name("projectsApp")
     .rootPath("/apps/projects")
-    .addRoute(Route("/", HTTPMethod.GET, projectsIndexPageController));
+    .addRoute(Route("", HTTPMethod.GET, PRJIndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, PRJIndexPageController));
 }
