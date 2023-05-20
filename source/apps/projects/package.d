@@ -25,11 +25,11 @@ public {
   import apps.projects.views;
 }
 
-DApp projectsApp;
 static this() {
-  projectsApp = App
+  AppRegistry.register("apps.projects",  
+    App
     .name("projectsApp")
     .rootPath("/apps/projects")
     .addRoute(Route("", HTTPMethod.GET, PRJIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, PRJIndexPageController));
+    .addRoute(Route("/", HTTPMethod.GET, PRJIndexPageController)));
 }
