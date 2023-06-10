@@ -3,7 +3,7 @@ module apps.projects.controllers.pages.index;
 import apps.projects;
 @safe:
 
-class DPRJIndexPageController : DAPPPageController {
+class DPRJIndexPageController : DPageController {
   mixin(ControllerThis!("PRJIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {

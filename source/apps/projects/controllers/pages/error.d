@@ -3,7 +3,7 @@ module apps.projects.controllers.pages.error;
 import apps.projects;
 @safe:
 
-class DPRJErrorPageController : DAPPPageController {
+class DPRJErrorPageController : DPageController {
   mixin(ControllerThis!("PRJErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
