@@ -27,9 +27,11 @@ public {
 
 static this() {
   AppRegistry.register("apps.projects",  
-    App
-    .name("projectsApp")
-    .rootPath("/apps/projects")
-    .addRoute(Route("", HTTPMethod.GET, PRJIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, PRJIndexPageController)));
+    App("projectsApp", "/apps/projects")
+      .importTranslations()
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
