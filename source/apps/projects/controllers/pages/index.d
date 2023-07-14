@@ -3,8 +3,8 @@ module apps.projects.controllers.pages.index;
 import apps.projects;
 @safe:
 
-class DPRJIndexPageController : DPageController {
-  mixin(ControllerThis!("PRJIndexPageController"));
+class DIndexPageController : DPageController {
+  mixin(ControllerThis!("IndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -13,4 +13,4 @@ class DPRJIndexPageController : DPageController {
       .view(PRJIndexView(this));
   }
 }
-mixin(ControllerCalls!("PRJIndexPageController"));
+mixin(ControllerCalls!("IndexPageController"));
