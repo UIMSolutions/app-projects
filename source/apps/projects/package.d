@@ -2,8 +2,10 @@ module apps.projects;
 
 mixin(ImportPhobos!());
 
-// Dub
-public import vibe.d;
+// External
+public {
+  import vibe.d;
+}
 
 // UIM
 public import uim.core;
@@ -26,12 +28,18 @@ public {
 }
 
 static this() {
-  AppRegistry.register("apps.projects",  
-    App("projectsApp", "apps/projects")
-      .importTranslations()
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
+  auto myApp = App("projectsApp", "apps/projects");
+
+  with(myApp) {
+    importTranslations;
+    addControllers([
+      "projects.index": IndexPageController
+    ]);
+    addRoutes(
+      Route("", HTTPMethod.GET, controller("projects.index")),
+      Route("/", HTTPMethod.GET, controller("projects.index"))
     );
+  }
+
+  AppRegistry.register("apps.projects", myApp);
 }
